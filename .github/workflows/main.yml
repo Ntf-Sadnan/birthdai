@@ -13,13 +13,16 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Clone Repository
-      run: git clone https://github.com/MubTaXim/Suva-AI-Reply.git
+      run: git clone https://github.com/Ntf-Sadnan/Suva-AI-Reply.git
       
     - name: Change Directory
       run: cd Suva-AI-Reply
       
     - name: Install Dependencies
       run: npm install
+      
+    - name: Update bot
+      run: node update
       
     - name: Start Application
       run: node index.js
